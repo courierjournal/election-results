@@ -1,0 +1,61 @@
+{
+  "live": true,
+  "lastUpdate": 0,
+  "title": "2019 Kentucky Primary",
+  "races": [
+    {
+      "id": 0,
+      "type": "standard",
+      "level": "state",
+      "label": "U.S. House 5th District",
+      "called": false,
+      "voteFor": 1,
+      "precincts": {
+        "reporting": 0,
+        "total": 619,
+        "percent": 0
+      },
+      "candidates": [
+        {
+          "id": 0,
+          "firstName": "John",
+          "middleName": "",
+          "lastName": "Doe",
+          "suffix": "Jr.",
+          "party": "r",
+          "incumbant": false,
+          "votes": 0,
+          "votePct": 0,
+          "winner": false
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "type": "initiative",
+      "level": "county",
+      "label": "Ballot Initiative",
+      "text": "Do you think so and so text of initiative here",
+      "called": false,
+      "precincts": {
+        "reporting": 0,
+        "total": 619,
+        "percent": 0
+      },
+      "candidates": [
+        {
+          "label": "Yes",
+          "votes": 0,
+          "votePct": 0,
+          "winner": false
+        },
+        {
+          "label": "No",
+          "votes": 0,
+          "votePct": 0,
+          "winner": false
+        }
+      ]
+    }
+  ]
+}
