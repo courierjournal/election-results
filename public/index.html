@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>election-results</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title><%= VUE_APP_TITLE %></title>
+    <meta name="title" content="<%= VUE_APP_TITLE %>" />
+    <meta name="description" content="<%= VUE_APP_DESCRIPTION %>" />
+
+    <meta property="og:title" content="<%= VUE_APP_TITLE %>" />
+    <meta property="og:description" content="<%= VUE_APP_DESCRIPTION %>" />
+    <meta property="og:url" content="<%= VUE_APP_URL %>" />
+    <meta property="og:image" content="<%= VUE_APP_SOCIAL_CARD %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="<%= VUE_APP_PROPERTY_NAME %>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="<%= VUE_APP_TWITTER_HANDLE %>" />
+    <meta name="twitter:creator" content="<%= VUE_APP_TWITTER_HANDLE %>" />
+
+    <script src="https://aas.gannettdigital.com/PLOU-AAS-INTERACTIVES/jab.min.js"></script>
+    <script src="https://projects.courier-journal.com/common/cj-chrome/cj-chrome.js"></script>
   </head>
-  <body>
-      <header>
-          <h1>title</h1>
-        </header>
+  <body
+    data-content-byline="jesse hazel"
+    data-content-headline="<%= VUE_APP_TITLE %>"
+    data-content-cst="news"
+    data-content-ssts="news"
+  >
+    <header>
+      <div class="cj-chrome-header"></div>
+    </header>
+    <section class="intro">
+      <h1><%= VUE_APP_TITLE %></h1>
+      <p><%= VUE_APP_DESCRIPTION %></p>
+    </section>
     <noscript>
-      <strong>We're sorry but election-results doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but election-results doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
     </noscript>
-    <div id="app"></div>
+    <main>
+      <div id="app"></div>
+    </main>
+    <footer>
+      <div class="cj-chrome-footer"></div>
+    </footer>
     <!-- built files will be auto injected -->
   </body>
 </html>

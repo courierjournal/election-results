@@ -41,7 +41,7 @@ export default {
         return 0;
       }
 
-      return this.race.candidates.sort(compare);
+      return this.race.candidates.slice().sort(compare);
     }
   }
 };

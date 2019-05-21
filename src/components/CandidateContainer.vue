@@ -1,6 +1,6 @@
 <template>
   <div class="candidate-container">
-    <div class="candidate-name">{{formattedName}}</div>
+    <div class="candidate-name" :class="{winner: this.candidate.winner}">{{formattedName}}</div>
     <div class="candidate-bar-container">
       <div class="candidate-bar-outer">
         <div
@@ -33,7 +33,7 @@ export default {
         decimal: ".",
         prefix: "",
         suffix: "",
-        duration: .8
+        duration: 0.8
       },
       countUpOptionsPercent: {
         useEasing: true,
@@ -81,6 +81,14 @@ export default {
   flex-basis: 40%;
   text-align: left;
   font-weight: bold;
+}
+
+.candidate-name.winner::before {
+  content: "✔";
+  width: 25px;
+  height: 25px;
+  color: #688929;
+  margin-right: 5px;
 }
 
 .candidate-bar-container {
