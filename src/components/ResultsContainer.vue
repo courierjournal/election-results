@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     getElectionData() {
-      fetch(this.resultsEndpoint)
+      fetch(`${this.resultsEndpoint}?t=` + new Date().getTime())
         .then(res => {
           return res.json();
         })
@@ -104,5 +104,11 @@ export default {
   right: 0;
   top: 0;
   z-index: 99999;
+}
+
+@media only screen and (max-width: 720px) {
+.race-container-outer{
+  flex-basis: 100%;
+}
 }
 </style>
